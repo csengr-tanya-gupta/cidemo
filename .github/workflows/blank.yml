@@ -16,7 +16,7 @@ steps:
 
   - name: Check for SECRET
     run: |
-      if grep -R "SECRET" . --exclude-dir=.git; then
+      if grep -R "SECRET" . --exclude-dir=.github; then
         echo "Found SECRET in repository"
         exit 1
       else
